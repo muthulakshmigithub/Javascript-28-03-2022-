@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>filter negative an Array</h1>
+    <h4>arr=[18, -42, 21, 6, -50,13,21,-30]</h4>
+    <strong>Output</strong><p id="output"></p>
+ 
+    <script>
+        var array = [18, -42, 21, 6, -50,13,21,-30];
+array = array.filter(function(x) { return x > -1; });
+
+document.getElementById("output").innerHTML=array;
+
+//console.log(array); // [18, 21, 6]
+    </script>
+   </body>
+</html>

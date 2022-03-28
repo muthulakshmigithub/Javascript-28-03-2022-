@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String remove white space</h1>
+    <h4> str='    My String With A    Lot Whitespace  ' </h4>
+    <strong>Output</strong><p id="output"></p>
+ 
+
+    <script>
+
+        const str = '      My String With A    Lot Whitespace     ';
+const str1= str.replace(/ /g,'');
+        document.getElementById("output").innerHTML=str;
+
+//console.log(str.replace(/ /g,''));
+ 
+    //const stripped = '    My String With A    Lot Whitespace  '.replace(/\s+/g, '')
+
+    </script>
+</body>
+</html>

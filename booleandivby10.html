@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Boolean if a number is divisible by 10</h2>
+    <p>
+    <label>Number</label>
+        <input id="num" type="number" placeholder="enter num">
+         </p>
+            <button  onclick="check()"> click</button>
+        <br><br>
+
+        <strong>boolean</strong><p id="output"></p>
+    <script>
+
+function check(){
+
+    const k=document.getElementById("num").value;
+    let s= Boolean;
+    if(k%10==0){
+    s = true;
+    }
+
+    else{
+       
+        s=false;
+    }
+    document.getElementById("output").innerHTML=s;
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Return the number of vowels in a string</h1>
+<p>
+<label>Enter a String</label>
+<input type="text" id="string" placeholder="enter text">
+
+
+</p>
+<button onclick="button()">click</button>
+
+<br>
+<br>
+<strong>count of vowels</strong><p id="output"></p>
+
+<script>
+    function button(){
+        let k= document.getElementById("string").value;
+      //  var vowels = ["a"];
+      let vowels="aeiou";  
+      let result =0;
+        for(let i= 0;i<k.length;i++){
+
+           if(vowels.includes(k[i].toLowerCase())){
+           result++;
+            }
+
+        }
+        document.getElementById("output").innerHTML=result;
+
+    }
+</script>
+</body>
+</html>
